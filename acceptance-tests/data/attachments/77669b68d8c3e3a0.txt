@@ -1,0 +1,82 @@
+Final status:
+Process still alive after running test suite
+stdout and stderr:
+DEBUG:root:[*] running method core_negotiate_tlv_encryption
+DEBUG:root:[*] Negotiating TLV encryption
+DEBUG:root:[*] RSA key: 30820122300d06092a864886f70d01010105000382010f003082010a0282010100d91b52758b0ceadf3cb871b6042f7a757c66c2d521b3e011406c74650a5e3d396438a9298afb03ad150282e19e54af97f8182f2a5129e451c6892db2e1c8e57d62f2dfd3bf5bde6cbc2a6996cf84e362071456819cdf53739aa904990945b3deae0b2d04061cb7c2c9294dbd7ca77ee03f56e134a47d2a09030ab22f50dd72744ecaee35f0fb21a707dbc06864736dbb8a0c64880717e951c1e091fec951df6749678f0758126c172a5476d6aba443b35dc6db3d8c8068e142f9aaa810dc1503735df708ff032e64f6a91fdebe70b2d1d6a43cd655c313230d0f359a477823d42012aff6905d9a123895601e4235c04d3e610349c9a5dfed7ab7fcfc50da59f30203010001
+DEBUG:root:[*] AES key: 0x1c20964a18771dfdcc6d23445d6ee7c6ea6db5589a8a05c1cd7ca62fd0fa5336
+DEBUG:root:[*] Encrypted AES key: 0x1ce7e1f4f05b7e6f5cc9fcf1e38bd71903e9f7d0bf71e1a791f2ea61a78a0a13e8275316323c9cab86f95783869b687a127896c605de06d722c2161f7f3e5eee2d57a92ea26e90f3b59dd59e2a686adc57414d592ca5f02e6864eb03de57a9d07800f915118c82e29028d6f93d730c06da6fa2c0d04f54badf84c647fc535b043b4d1e38fe71cda940938ee158f584de9d906b89e78d65eb57f992d7ea6a555e53713cfbc6e947df58ae21555ffd8f2fc558e85c7f9a5bc0cec5c690d864643899fc0e21999390212734e2cd7e12038a1003ed6a100185113cc866e9e26b83c02780e993be1370b3eae28c99b2d166defa370a47c9dd8fbac559aa37cd737475
+DEBUG:root:[*] TLV encryption sorted
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method core_set_session_guid
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method core_enumextcmd
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method core_enumextcmd
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method core_loadlib
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method stdapi_fs_getwd
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method stdapi_sys_config_getuid
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method stdapi_sys_config_sysinfo
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method core_set_uuid
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method stdapi_net_config_get_interfaces
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method stdapi_net_config_get_routes
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method stdapi_sys_process_execute
+DEBUG:root:[*] starting process: ['cmd.exe', '/c', 'echo', 'tBdN', '1>&2']
+DEBUG:root:[*] added process id: 5420, handle: 724
+DEBUG:root:[*] added channel id: 1 type: MeterpreterProcess
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method core_channel_read
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method core_channel_read
+DEBUG:root:[-] method core_channel_read resulted in error: #1
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method stdapi_sys_process_close
+DEBUG:root:[*] closed and removed process handle: 724
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method stdapi_sys_process_execute
+DEBUG:root:[*] starting process: ['cmd.exe', '/c', 'echo', 'vUgr']
+DEBUG:root:[*] added process id: 5144, handle: 752
+DEBUG:root:[*] added channel id: 2 type: MeterpreterProcess
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method core_channel_read
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method core_channel_read
+DEBUG:root:[-] method core_channel_read resulted in error: #1
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method stdapi_sys_process_close
+DEBUG:root:[*] closed and removed process handle: 752
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method stdapi_sys_process_execute
+DEBUG:root:[*] starting process: ['cmd.exe', '/c', 'echo', 'dujN']
+DEBUG:root:[*] added process id: 4072, handle: 808
+DEBUG:root:[*] added channel id: 3 type: MeterpreterProcess
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method core_channel_read
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method core_channel_read
+DEBUG:root:[-] method core_channel_read resulted in error: #1
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method stdapi_sys_process_close
+DEBUG:root:[*] closed and removed process handle: 808
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method stdapi_sys_process_execute
+DEBUG:root:[*] starting process: ['cmd.exe', '/c', 'echo', 'KfJO']
+DEBUG:root:[*] added process id: 6808, handle: 800
+DEBUG:root:[*] added channel id: 4 type: MeterpreterProcess
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method core_channel_read
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method core_channel_read
+DEBUG:root:[-] method core_channel_read resulted in error: #1
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method stdapi_sys_process_close
+DEBUG:root:[*] closed and removed process handle: 800
+DEBUG:root:[*] sending response packet
